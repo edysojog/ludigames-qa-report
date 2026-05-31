@@ -41,7 +41,7 @@ A full HTML report is generated at `report.html` after each run.
 
 Before running any tests, I put myself in the mindset of a regular user and asked: *what should always work so that the experience isn't disturbed?*
 
-User experience is the most important part of a website — if a user cannot access something they need, or can access something that shouldn't be public, there would be a significant problem.
+User experience is the most important part of a website. If a user cannot access something they need, or can access something that shouldn't be public, there would be a significant problem.
 
 Here are a few observations I noted while browsing:
 
