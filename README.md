@@ -1,10 +1,10 @@
-# 🎮 Ludigames QA Automation Suite
+# Ludigames QA Automation Suite
 
 Automated test suite for [play.ludigames.com](https://play.ludigames.com) — built as part of the Gameloft QA Automation & AI Internship application challenge.
 
 ---
 
-## 🚀 Setup & Run
+## Setup & Run
 
 ### 1. Clone the repository
 ```bash
@@ -37,7 +37,7 @@ A full HTML report is generated at `report.html` after each run.
 
 ---
 
-## 👤 Findings & Observations
+## Findings & Observations
 
 Before running any tests, I put myself in the mindset of a regular user and asked: *what should always work so that the experience isn't disturbed?*
 
@@ -62,7 +62,7 @@ Here are a few observations I noted while browsing:
 
 ---
 
-## 🔍 How I Explored the Site
+## How I Explored the Site
 
 Before writing any tests, I spent time manually exploring play.ludigames.com with **browser DevTools open** (Network tab, XHR filter). This revealed:
 
@@ -155,14 +155,19 @@ Here is a short explanation of every UI test, what it does and why it matters.
 
 ---
 
-## 📸 Test Results
+## Test Results
 
 
 ![Test Results](results.png)
 
 ---
 
-## 🛠 Tech Stack
+## HTML Report
+The tests can also be presented in a nicer format, a HTML Report.
+
+<img width="1815" height="850" alt="image" src="https://github.com/user-attachments/assets/a358855e-96cc-4419-89c1-44c3a6942c0c" />
+
+## Tech Stack
 
 - **Python 3.x**
 - **pytest** — test runner
