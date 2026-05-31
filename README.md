@@ -157,10 +157,8 @@ Here is a short explanation of every UI test, what it does and why it matters.
 
 ## 📸 Test Results
 
-```
-![Test Results](results.png)
 
-```
+![Test Results](results.png)
 
 ---
 
