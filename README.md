@@ -158,7 +158,8 @@ Here is a short explanation of every UI test, what it does and why it matters.
 ## Test Results
 
 
-![Test Results](results.png)
+<img width="869" height="542" alt="image" src="https://github.com/user-attachments/assets/4b16e030-bd73-4430-9f19-1cc2973d2e33" />
+
 
 ---
 
