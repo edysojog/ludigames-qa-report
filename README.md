@@ -1,6 +1,6 @@
 # Ludigames QA Automation Suite
 
-Automated test suite for [play.ludigames.com](https://play.ludigames.com) — built as part of the Gameloft QA Automation & AI Internship application challenge.
+Automated test suite for [play.ludigames.com](https://play.ludigames.com), built as part of the Gameloft QA Automation & AI Internship application challenge.
 
 ---
 
@@ -76,7 +76,7 @@ This research-first approach ensured every test is grounded in real observed beh
 
 ---
 
-## 🧪 Test Scenarios
+## Test Scenarios
 
 ### API Tests (`tests/test_api.py`)
 
@@ -85,7 +85,7 @@ Here is a short explanation of every API test, what it does and why it matters.
 #### TC-API-01
 **Test:** Valid category IDs return HTTP 200 with non-empty JSON
 
-**Why?** Core homepage API — if it breaks, no games are shown to anyone.
+**Why?** Core homepage API, if it breaks, no games are shown to anyone.
 
 #### TC-API-02
 **Test:** Each game object contains all required fields
@@ -95,7 +95,7 @@ Here is a short explanation of every API test, what it does and why it matters.
 #### TC-API-03
 **Test:** `product_id` is always int, `isPortrait` is always bool
 
-**Why?** Type mismatches cause silent bugs — wrong types break URL generation and layout logic.
+**Why?** Type mismatches cause silent bugs, wrong types break URL generation and layout logic.
 
 #### TC-API-04
 **Test:** Invalid `cat_id` values (`-1`, `abc`, `99999999`) return `{}`
@@ -105,17 +105,17 @@ Here is a short explanation of every API test, what it does and why it matters.
 #### TC-API-05
 **Test:** Missing `cat_id` parameter returns 200 without crashing
 
-**Why?** Consistent error handling — omitting a parameter should not cause a server error.
+**Why?** Consistent error handling, omitting a parameter should not cause a server error.
 
 #### TC-API-06
 **Test:** `orderByRank=true` returns the same results as `orderByRank=`
 
-**Why?** Documents discovered behavior — any future change to this would be caught immediately.
+**Why?** Documents discovered behavior, any future change to this would be caught immediately.
 
 #### TC-API-07
 **Test:** Valid game key returns HTTP 200 from CDN
 
-**Why?** Each game page depends on this CDN call to load — if it fails, the game won't start.
+**Why?** Each game page depends on this CDN call to load, if it fails, the game won't start.
 
 #### TC-API-08
 **Test:** Non-existent game key returns HTTP 404 from CDN
@@ -131,22 +131,22 @@ Here is a short explanation of every UI test, what it does and why it matters.
 #### TC-UI-01
 **Test:** Homepage loads with game cards visible
 
-**Why?** The most basic user expectation — the portal must show games on arrival.
+**Why?** The most basic user expectation, the portal must show games on arrival.
 
 #### TC-UI-02
 **Test:** Search for "pixelcraft" returns "PixelCraft Parkour"
 
-**Why?** Search is the primary game discovery feature — wrong results destroy trust.
+**Why?** Search is the primary game discovery feature.
 
 #### TC-UI-03
 **Test:** Empty search input does not break the page
 
-**Why?** Edge case — users often click and clear the search bar without typing.
+**Why?** Edge case, users often click and clear the search bar without typing.
 
 #### TC-UI-04
 **Test:** Game page loads for a valid `pID`
 
-**Why?** Every game card links here — a blank game page means users can't play.
+**Why?** Every game card links here, a blank game page means users can't play.
 
 #### TC-UI-05
 **Test:** Category page loads and displays game cards
